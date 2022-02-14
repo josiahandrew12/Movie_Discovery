@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <h1>
+        Josiah's Favorite Movies
+    </h1>
+    <div>
+        <div>
+            
+            <br>
+            {% for i in range(num_movies1)%}
+
+                {% if 'http' in movie_searches1[i] %}
+                <img  src="{{movie_searches1[i]}}" width=150" height="300" >
+                {% else %}
+                <br>{{movie_searches1[i]}}</br>
+                {% endif %}
+                {% endfor %}
+                <a href="https://en.wikipedia.org/wiki/Skyfall">Click here to see wikipedia</a>
+
+        </div>
+        <div "style=width:800px; margin:0 auto;">
+            <br>
+            {% for j in range(num_movies2)%}
+                {% if 'http' in movie_searches2[j] %}
+                <img  src="{{movie_searches2[j]}}" width=150" height="300" >
+                {% else %}
+                <br>{{movie_searches2[j]}}</br>
+                {% endif %}
+                {% endfor %}
+                <a href="https://en.wikipedia.org/wiki/The_Hunger_Games">Click here to see wikipedia</a>
+        </div>
+        <div>
+            <br>
+            {% for k in range(num_movies3)%}
+                {% if 'http' in movie_searches3[k] %}
+                <img  src="{{movie_searches3[k]}}" width=150" height="300" >
+                {% else %}
+                <br>{{movie_searches3[k]}}</br>
+                {% endif %}
+                {% endfor %}
+                <a href="https://en.wikipedia.org/wiki/X-Men:_First_Class">Click here to see wikipedia</a>
+        </div>
+        <div>
+            <br>
+            {% for k in range(num_movies4)%}
+                {% if 'http' in movie_searches4[k] %}
+                <img  src="{{movie_searches4[k]}}" width=150" height="300" >
+                {% else %}
+                <br>{{movie_searches4[k]}}</br>
+                {% endif %}
+                {% endfor %}
+                <a href="{{wiki_links}}">Click here to see wikipedia</a>
+        </div>
+</body>
+</html>

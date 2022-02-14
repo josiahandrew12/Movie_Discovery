@@ -1,0 +1,21 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif,;
+    font-family:cursive;
+    height: 400px;
+    width: 800px;
+    margin-right: 40px;
+}
+
+div{
+    font-family:cursive;
+    color:blueviolet;
+    width: 90%;
+    margin-left: 350px;
+  }
+
+  h1{
+    font-family:cursive;
+    color:blueviolet;
+    width: 90%;
+    margin-left: 620px;
+  }
